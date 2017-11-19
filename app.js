@@ -11,7 +11,7 @@ const express = require('express'),
 // map global promise - get rid of warning
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://localhost/stockmarketapp',{useMongoClient: true});
+mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds113566.mlab.com:13566/thestockmarket',{useMongoClient: true});
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -37,10 +37,6 @@ app.get('/', (req, res) => {
              res.render('./2-sections/index', {stocksArr: stocksArr});
          });
 });
-
-// app.delete('/', (req, res) => {
-//     console.log('da');
-// });
 
 const server = app.listen(port);
 
