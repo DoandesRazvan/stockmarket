@@ -1,0 +1,254 @@
+/*! normalize.css v7.0.0 */
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article, aside, footer, header, nav, section {
+  display: block; }
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0; }
+
+figcaption, figure, main {
+  display: block; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible; }
+
+pre {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects; }
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted; }
+
+b, strong {
+  font-weight: inherit; }
+
+b, strong {
+  font-weight: bolder; }
+
+code, kbd, samp {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -.25em; }
+
+sup {
+  top: -.5em; }
+
+audio, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+img {
+  border-style: none; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0; }
+
+button, input {
+  overflow: visible; }
+
+button, select {
+  text-transform: none; }
+
+[type=reset], [type=submit], button, html [type=button] {
+  -webkit-appearance: button; }
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+fieldset {
+  padding: .35em .75em .625em; }
+
+legend {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal; }
+
+progress {
+  display: inline-block;
+  vertical-align: baseline; }
+
+textarea {
+  overflow: auto; }
+
+[type=checkbox], [type=radio] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0; }
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto; }
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px; }
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit; }
+
+details, menu {
+  display: block; }
+
+summary {
+  display: list-item; }
+
+canvas {
+  display: inline-block; }
+
+template {
+  display: none; }
+
+[hidden] {
+  display: none; }
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#gradient-background {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px;
+  background: -webkit-gradient(linear, left top, right top, from(#642b73), to(#c6426e));
+  background: linear-gradient(to right, #642b73, #c6426e); }
+  #gradient-background #stocks, #gradient-background #stocks .stock, #gradient-background #add-stock, #gradient-background .highcharts-container {
+    border-radius: 15px; }
+  #gradient-background #stocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: calc(30vw - 40px);
+    min-height: calc(100vh - 40px);
+    padding: 10px;
+    background: #F2F3F4; }
+    #gradient-background #stocks .stock, #gradient-background #stocks #add-stock {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: relative;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 100px;
+      margin-top: 10px;
+      padding: 20px; }
+    #gradient-background #stocks .stock p {
+      margin: 0;
+      color: #eee;
+      font-family: "Oswald", sans-serif;
+      font-size: 36px; }
+    #gradient-background #stocks .stock .delete-button {
+      position: absolute;
+      right: 20px;
+      top: 10px;
+      background: none;
+      font-family: Arial, sans-serif;
+      font-size: 40px;
+      color: #F2F3F4;
+      text-decoration: none;
+      border: none;
+      -webkit-transition: all 0.15s ease-in-out;
+      transition: all 0.15s ease-in-out;
+      cursor: pointer; }
+      #gradient-background #stocks .stock .delete-button:hover {
+        top: 5px;
+        right: 15px; }
+    #gradient-background #stocks #add-stock {
+      -webkit-box-ordinal-group: 10000;
+      -ms-flex-order: 9999;
+      order: 9999;
+      background: #03A9F4; }
+      #gradient-background #stocks #add-stock input {
+        height: 50px;
+        font-family: Segoe UI, sans-serif;
+        font-size: 22px;
+        border: none;
+        border-radius: 5px; }
+      #gradient-background #stocks #add-stock #stock-code {
+        width: 280px;
+        padding: 10px; }
+      #gradient-background #stocks #add-stock #add-stock-submit {
+        width: 140px;
+        margin-left: 10px;
+        background: #333;
+        color: #eee;
+        -webkit-transition: all 0.15s ease-in;
+        transition: all 0.15s ease-in;
+        cursor: pointer; }
+        #gradient-background #stocks #add-stock #add-stock-submit:hover {
+          background: #222; }
+    #gradient-background #stocks .stock:first-child {
+      margin-top: 0; }
+  #gradient-background #stock-chart {
+    position: fixed;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    width: calc(70vw - 40px);
+    height: calc(100vh - 40px);
+    right: 20px; }

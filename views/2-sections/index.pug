@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald")
+    link(rel="stylesheet" href="../css/index.css")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+    script(src="https://code.highcharts.com/stock/highstock.src.js")
+    script(src="https://code.highcharts.com/stock/modules/exporting.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js")
+    meta(name="viewport" content="width=device-width, initial-scale = 1.0 user-scalable=no")
+  body
+    #gradient-background
+      #stocks
+        #add-stock
+          input(type="text" placeholder="Enter stock code here" name="stockCode")#stock-code
+          input(type="submit" value="ENTER")#add-stock-submit
+
+      #stock-chart
+
+    script.
+      var stocks = !{JSON.stringify(stocksArr)};
+    script(src="../scripts/index.js")

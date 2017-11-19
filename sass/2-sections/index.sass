@@ -1,0 +1,101 @@
+@import '../0-utilities/_reset'
+@import '../0-utilities/_variables'
+
+*
+  box-sizing: border-box
+
+#gradient-background
+  display: flex
+  align-items: center
+  padding: 20px
+  background: linear-gradient(to right, #642b73, #c6426e)
+
+  #stocks, #stocks .stock, #add-stock, .highcharts-container
+    border-radius: 15px
+  
+  #stocks
+    display: flex
+    flex-direction: column
+    width: calc(30vw - 40px)
+    min-height: calc(100vh - 40px)
+    padding: 10px
+    background: $white
+
+    .stock, #add-stock
+      display: flex
+      position: relative
+      align-items: center
+      height: 100px
+      margin-top: 10px
+      padding: 20px
+
+    .stock
+      p
+        margin: 0
+
+        color: #eee
+        font:
+          family: "Oswald", sans-serif
+          size: 36px
+
+      .delete-button
+        position: absolute
+        right: 20px
+        top: 10px
+        background: none
+
+        font:
+          family: Arial, sans-serif
+          size: 40px
+        color: $white
+        text-decoration: none
+        
+        border: none
+
+        transition: all 0.15s ease-in-out
+        cursor: pointer
+        
+        &:hover
+          top: 5px
+          right: 15px
+
+    #add-stock
+      order: 9999
+      background: #03A9F4
+
+      input
+        height: 50px
+        
+        font:
+          family: Segoe UI, sans-serif
+          size: 22px
+
+        border: none
+        border-radius: 5px
+
+      #stock-code
+        width: 280px
+        padding: 10px
+
+      #add-stock-submit
+        width: 140px
+        margin-left: 10px
+        background: #333
+
+        color: #eee
+
+        transition: all 0.15s ease-in
+        cursor: pointer
+
+        &:hover
+          background: #222
+
+    .stock:first-child
+      margin-top: 0
+
+  #stock-chart
+    position: fixed
+    align-self: flex-start
+    width: calc(70vw - 40px)
+    height: calc(100vh - 40px)
+    right: 20px
