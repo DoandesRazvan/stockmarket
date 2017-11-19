@@ -11,7 +11,7 @@ const express = require('express'),
 // map global promise - get rid of warning
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds113566.mlab.com:13566/thestockmarket',{useMongoClient: true});
+mongoose.connect('mongodb://fuzyon:1234@ds113566.mlab.com:13566/thestockmarket',{useMongoClient: true});
 
 app.use(express.static(path.join(__dirname, 'public')));
 
