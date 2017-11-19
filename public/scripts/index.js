@@ -42,7 +42,7 @@
           $addstocksubmit = $('#add-stock-submit');
 
     // socket
-    const socket = io.connect('http://localhost:3000');
+    const socket = io.connect('http://thestockmarket.herokuapp.com');
     
     $('body').on('click', '.delete-button', function() {
         let stockCode = $(this).siblings('p').text();
